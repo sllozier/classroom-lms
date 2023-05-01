@@ -32,8 +32,8 @@ function Navbar() {
             <MenuIcon />
           </IconButton>
           <img
-            src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png"
-            alt="Google Logo"
+            src="https://raw.githubusercontent.com/sllozier/classroom-lms/8ba86249d05685fad1a323b8a14192a5e4286de9/public/piccies/classroom_lms_nav.svg"
+            alt="Classroom Logo"
             className="navbar__logo"
           />{" "}
           <span>Classroom</span>
