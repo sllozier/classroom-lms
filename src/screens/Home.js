@@ -1,17 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useNavigate } from "react-router-dom";
-import { auth, signInWithGoogle } from "../firebase";
-import Navbar from "../components/Navbar";
+import { useNavigate, Link } from "react-router-dom";
+import { auth, signInWithGoogle, signInWithEmail } from "../firebase";
 
 function Home() {
   const [user, loading] = useAuthState(auth);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   useEffect(() => {
     if (loading) return;
     if (user) navigate("/dashboard");
-  }, [navigate, loading, user]);
+  }, [loading, user]);
+
+  const handleSignup = async () => {
+    navigate("/sign-up");
+  };
 
   return (
     <div className="home">
@@ -21,9 +26,35 @@ function Home() {
           alt="Enter Classroom"
           className="home__image"
         />
-        <button className="home__login" onClick={signInWithGoogle}>
+        <input
+          type="text"
+          className="login__textBox"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="E-mail Address"
+        />
+        <input
+          type="password"
+          className="login__textBox"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
+        />
+        <button
+          className="login__btn"
+          onClick={() => signInWithEmail(auth, email, password)}
+        >
           Login
         </button>
+        <button className="login__btn login__google" onClick={signInWithGoogle}>
+          Login with Google
+        </button>
+        <div>
+          <Link to="/reset">Forgot Password</Link>
+        </div>
+        <div>
+          Don't have an account? <Link to="/sign-up">Sign Up</Link> now.
+        </div>
       </div>
     </div>
   );

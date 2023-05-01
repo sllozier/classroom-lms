@@ -32,7 +32,7 @@ function Navbar() {
             <MenuIcon />
           </IconButton>
           <img
-            src="https://raw.githubusercontent.com/sllozier/classroom-lms/8ba86249d05685fad1a323b8a14192a5e4286de9/public/piccies/classroom_lms_nav.svg"
+            src="https://raw.githubusercontent.com/sllozier/classroom-lms/402c3af5208927e09e766608a97b4faac76efc00/public/piccies/classroom_lms_nav.svg"
             alt="Classroom Logo"
             className="navbar__logo"
           />{" "}
