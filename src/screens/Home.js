@@ -16,7 +16,11 @@ function Home() {
   return (
     <div className="home">
       <div className="home__container">
-        <img src="" alt="Google Classroom" className="home__image" />
+        <img
+          src="https://raw.githubusercontent.com/sllozier/classroom-lms/1bc6898419d4a5ba6dd7e7d5ebc25de7373da732/public/piccies/classroom_lms.svg"
+          alt="Enter Classroom"
+          className="home__image"
+        />
         <button className="home__login" onClick={signInWithGoogle}>
           Login
         </button>
