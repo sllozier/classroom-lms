@@ -1,39 +1,37 @@
 {
-    "name": "create-frontend-boilerplate",
+    "name": "classroom-lms",
     "version": "0.0.1",
-    "bin": {
-        "create-boilerplate": "./bin/create-app.js"
-      },
-      "description": "React boilerplate for frontend only.",
+    "description": "Classroom learning management system similar to google classroom with firebase.",
     "scripts": {
-      "start": "webpack serve",
-      "build-watch": "webpack -w"
+        "start": "webpack serve",
+        "build-watch": "webpack -w"
     },
-    "keywords": [
-        "boilerplate",
-        "frontend",
-        "webpack"
-    ],
     "author": "sllozier",
     "license": "MIT",
-    "homepage": "https://github.com/sllozier/create-frontend-boilerplate",
+    "homepage": "https://github.com/sllozier/classroom-lms",
     "repository": {
         "type": "git",
-        "url": "https://github.com/sllozier/create-frontend-boilerplate.git"
-      },
-      "bugs": "https://github.com/sllozier/create-frontend-boilerplate/issues",
+        "url": "https://github.com/sllozier/classroom-lms.git"
+    },
+    "bugs": "https://github.com/sllozier/classroom-lms/issues",
     "dependencies": {
-      "react": "^18.1.0",
-      "react-dom": "^18.1.0"
+        "@material-ui/core": "^4.12.4",
+        "@material-ui/icons": "^4.11.3",
+        "firebase": "^9.21.0",
+        "moment": "^2.29.4",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
+        "react-firebase-hooks": "^5.1.1",
+        "react-router-dom": "^6.11.0",
+        "recoil": "^0.7.7"
     },
     "devDependencies": {
-      "webpack-cli": "^4.10.0",
-      "webpack": "^5.79.0",
-      "webpack-dev-server": "^4.7.3",
-      "@babel/core": "7.17.10",
-      "@babel/preset-env": "^7.19.1",
-      "@babel/preset-react": "^7.18.6",
-      "babel-loader": "^8.2.3"
+        "@babel/core": "7.17.10",
+        "@babel/preset-env": "^7.19.1",
+        "@babel/preset-react": "^7.18.6",
+        "babel-loader": "^8.2.3",
+        "webpack": "^5.79.0",
+        "webpack-cli": "^4.10.0",
+        "webpack-dev-server": "^4.7.3"
     }
-  }
-  
+}
