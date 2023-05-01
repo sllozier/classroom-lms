@@ -4,7 +4,8 @@
     "description": "Classroom learning management system similar to google classroom with firebase.",
     "scripts": {
         "start": "webpack serve",
-        "build-watch": "webpack -w"
+        "build-watch": "webpack -w",
+        "build": "webpack"
     },
     "author": "sllozier",
     "license": "MIT",
