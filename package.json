@@ -1,0 +1,39 @@
+{
+    "name": "create-frontend-boilerplate",
+    "version": "0.0.1",
+    "bin": {
+        "create-boilerplate": "./bin/create-app.js"
+      },
+      "description": "React boilerplate for frontend only.",
+    "scripts": {
+      "start": "webpack serve",
+      "build-watch": "webpack -w"
+    },
+    "keywords": [
+        "boilerplate",
+        "frontend",
+        "webpack"
+    ],
+    "author": "sllozier",
+    "license": "MIT",
+    "homepage": "https://github.com/sllozier/create-frontend-boilerplate",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sllozier/create-frontend-boilerplate.git"
+      },
+      "bugs": "https://github.com/sllozier/create-frontend-boilerplate/issues",
+    "dependencies": {
+      "react": "^18.1.0",
+      "react-dom": "^18.1.0"
+    },
+    "devDependencies": {
+      "webpack-cli": "^4.10.0",
+      "webpack": "^5.79.0",
+      "webpack-dev-server": "^4.7.3",
+      "@babel/core": "7.17.10",
+      "@babel/preset-env": "^7.19.1",
+      "@babel/preset-react": "^7.18.6",
+      "babel-loader": "^8.2.3"
+    }
+  }
+  
