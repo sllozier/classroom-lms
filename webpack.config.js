@@ -1,15 +1,16 @@
+const path = require("path");
+
 module.exports = {
-  mode: "development",
-  entry: ["./src/index.js"],
+  entry: "./src/app.js",
   output: {
-    path: __dirname + "/public",
+    path: path.join(__dirname + "/public"),
     filename: "bundle.js",
   },
   context: __dirname,
   devtool: "source-map",
   devServer: {
     static: {
-      directory: __dirname + "/public",
+      directory: path.join(__dirname + "/public"),
     },
   },
   module: {
