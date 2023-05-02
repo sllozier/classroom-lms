@@ -2,10 +2,11 @@
     "name": "classroom-lms",
     "version": "0.0.1",
     "description": "Classroom learning management system similar to google classroom with firebase.",
+
     "scripts": {
         "start": "webpack serve",
         "build-watch": "webpack -w",
-        "build": "webpack serve"
+        "build": "webpack"
     },
     "author": "sllozier",
     "license": "MIT",
